@@ -1,4 +1,41 @@
-# organization
+# Organization
+
+## Scénario
+
+Etat initial:
+
+* L'application Quarkus est dans le repository Git
+* Les environnement de test et prod sont vierges
+* La plateforme (DevSpaces, ACS, Tekton) est déjà installée
+
+Etape 1:
+
+* Guillaume ouvre DevSpaces pour éditer le projet
+* Montrer que la base de données est provisionnée avec le workspace (via le plugin openshift)
+* Lancement de l'appli
+* Modifications
+* Live reload Quarkus
+* Commit
+
+Etape 2:
+
+* Nicolas déploie l'environnement de test via Helm/Opérateur (à décider)
+* Nicolas déploie l'environnement de prod via Helm (à valider)
+
+Etape 3:
+
+* Guillaume lance le pipeline Tekton
+* Le pipeline construit l'application et la déploie en test
+* Le pipeline attend l'approbation via slack pour continuer
+* Nicolas donne l'appro
+* Le pipeline déploie en prod
+
+Etape 4:
+
+* Nicolas est le pirate, il veut changer l'image utilisée en prod
+* ACS bloque le déploiement
+* Nicolas veut pirater la supply chain
+* Guillaume lui montre Tekton Chains, il renonce.
 
 ## TODO
 
