@@ -1,0 +1,57 @@
+{
+    "policies": [
+        {
+            "name": "Image is not signed",
+            "description": "The container image has not been digitally signed.",
+            "rationale": "The container image MUST be digitally signed in order to prevent tampering.",
+            "remediation": "Use cosign to sign this image. See https://docs.sigstore.dev/cosign/signing_with_containers/",
+            "disabled": false,
+            "categories": [
+                "Security Best Practices"
+            ],
+            "lifecycleStages": [
+                "DEPLOY"
+            ],
+            "eventSource": "NOT_APPLICABLE",
+            "exclusions": [],
+            "scope": [
+                {
+                    "cluster": null,
+                    "namespace": "dev",
+                    "label": null
+                }
+            ],
+            "severity": "CRITICAL_SEVERITY",
+            "enforcementActions": [
+                "SCALE_TO_ZERO_ENFORCEMENT",
+                "UNSATISFIABLE_NODE_CONSTRAINT_ENFORCEMENT"
+            ],
+            "notifiers": [],
+            "SORTName": "",
+            "SORTLifecycleStage": "",
+            "SORTEnforcement": false,
+            "policyVersion": "1.1",
+            "policySections": [
+                {
+                    "sectionName": "Policy Section 1",
+                    "policyGroups": [
+                        {
+                            "fieldName": "Image Signature Verified By",
+                            "booleanOperator": "OR",
+                            "negate": false,
+                            "values": [
+                                {
+                                    "value": "io.stackrox.signatureintegration.262e48d8-a6d4-44b6-aeed-52d6dd18061c"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "mitreAttackVectors": [],
+            "criteriaLocked": false,
+            "mitreVectorsLocked": false,
+            "isDefault": false
+        }
+    ]
+}
