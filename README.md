@@ -48,6 +48,6 @@ Etape 4:
 * 🟠 **Nicolas**: Base de données de prod: [préparer le cloud-init](cloud-init/README.md)
 * 🟢 **Guillaume**: Devfile (composant DB + plugin OCP)
 * 🔴 **Nicolas**: GitOps (Setup [Tekton](https://github.com/nmasse-itix/demo-apimgmt/tree/gitops/infrastructure/templates), Tekton Chains, ACS, )
-* 🟠 **Nicolas**: [Configurer ACS pour Sigstore](acs/README.md)
+* 🟢 **Nicolas**: [Configurer ACS pour Sigstore](acs/README.md)
 * 🔴 **Guillaume**: Créer le pipeline Tekton
 * 🔴 **Nicolas**: [Créer la tache Tekton qui demande l'appro via Slack](tekton-appro/README.md)
