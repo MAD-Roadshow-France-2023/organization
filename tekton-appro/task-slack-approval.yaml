@@ -1,0 +1,30 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: slack-approval
+spec:
+  params:
+  - name: slackChannel
+    type: string
+  - name: slackSecretName
+    type: string
+  - name: pipelineId
+    type: string
+  steps:
+  - name: slack-approval
+    image: quay.io/madroadshowfrance2023/tekton-pipeline-slack-bot:latest
+    env:
+    - name: SLACK_CHANNEL
+      value: "$(params.slackChannel)"
+    - name: TEKTON_PIPELINE_ID
+      value: "$(params.pipelineId)"
+    - name: SLACK_BOT_TOKEN
+      valueFrom:
+        secretKeyRef:
+          name: $(params.slackSecretName)
+          key: "bot-token"
+    - name: SLACK_APP_TOKEN
+      valueFrom:
+        secretKeyRef:
+          name: $(params.slackSecretName)
+          key: "app-token"
