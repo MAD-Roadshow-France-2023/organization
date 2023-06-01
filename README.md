@@ -44,10 +44,11 @@ Etape 4:
 ## TODO
 
 * 🟢 **Guillaume**: Créer ou trouver une application Quarkus stateful (si possible avec support d'une base de données simple à déployer comme postgresql. [Exemple 1](https://github.com/nmasse-itix/demo-appdev))
-* 🟢 **Guillaume**: Base de données de test: Opérateur ou [chart Helm](https://github.com/nmasse-itix/antennas-gitops) ?
+* 🟢 **Guillaume**: Base de données de test: [Opérateur](https://github.com/MAD-Roadshow-France-2023/gitops/tree/main/kustomize/postgres)
 * 🟠 **Nicolas**: Base de données de prod: [préparer le cloud-init](cloud-init/README.md)
-* 🟢 **Guillaume**: Devfile (composant DB + plugin OCP)
+* 🟢 **Guillaume**: [Devfile](https://github.com/MAD-Roadshow-France-2023/devspaces/blob/main/devfile.yaml) (composant DB + plugin OCP)
 * 🔴 **Nicolas**: GitOps (Setup [Tekton](https://github.com/nmasse-itix/demo-apimgmt/tree/gitops/infrastructure/templates), Tekton Chains, ACS, )
 * 🟢 **Nicolas**: [Configurer ACS pour Sigstore](acs/README.md)
-* 🔴 **Guillaume**: Créer le pipeline Tekton
+* 🔴 **Nicolas**: Faire le chart Helm de l'environnement de test & prod
+* 🟢 **Guillaume**: [Créer le pipeline Tekton](https://github.com/MAD-Roadshow-France-2023/devspaces/tree/main/tekton)
 * 🟢 **Nicolas**: [Créer la tache Tekton qui demande l'appro via Slack](tekton-appro/README.md)
