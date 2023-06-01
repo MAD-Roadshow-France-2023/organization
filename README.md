@@ -44,7 +44,7 @@ Etape 4:
 ## TODO
 
 * 🟢 **Guillaume**: Créer ou trouver une application Quarkus stateful (si possible avec support d'une base de données simple à déployer comme postgresql. [Exemple 1](https://github.com/nmasse-itix/demo-appdev))
-* 🟠 **Guillaume**: Base de données de test: Opérateur ou [chart Helm](https://github.com/nmasse-itix/antennas-gitops) ?
+* 🟢 **Guillaume**: Base de données de test: Opérateur ou [chart Helm](https://github.com/nmasse-itix/antennas-gitops) ?
 * 🟠 **Nicolas**: Base de données de prod: [préparer le cloud-init](cloud-init/README.md)
 * 🟢 **Guillaume**: Devfile (composant DB + plugin OCP)
 * 🔴 **Nicolas**: GitOps (Setup [Tekton](https://github.com/nmasse-itix/demo-apimgmt/tree/gitops/infrastructure/templates), Tekton Chains, ACS, )
