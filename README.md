@@ -33,6 +33,7 @@ Etape 3:
 * Le pipeline attend l'approbation via slack pour continuer
 * Nicolas donne l'appro
 * Le pipeline déploie en prod
+* Nicolas ou Guillaume montre que l'application fonctionne en test et en prod
 
 Etape 4:
 
