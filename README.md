@@ -14,17 +14,17 @@ Etat initial:
 
 Etape 1:
 
+* Nicolas déploie l'environnement de test via Helm + Opérateur
+* Nicolas déploie l'environnement de prod via Helm + VM
+
+Etape 2:
+
 * Guillaume ouvre DevSpaces pour éditer le projet
 * Montrer que la base de données est provisionnée avec le workspace (via le plugin openshift)
 * Lancement de l'appli
 * Modifications
 * Live reload Quarkus
 * Commit
-
-Etape 2:
-
-* Nicolas déploie l'environnement de test via Helm/Opérateur (à décider)
-* Nicolas déploie l'environnement de prod via Helm (à valider)
 
 Etape 3:
 
